@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>factore number
+        <input id="num" type="text">
+    </h2>
+    <button onclick="factore()">Clike</button>
+    <p id="result"></p>
+    <script>
+        function factore(){
+        let num=document.getElementById("num").value;
+        let factore=1;
+        for(i=1;i<=num;i++){
+           factore= factore*i;
+        }
+            document.getElementById("result").innerHTML=`factore number:${factore}`
+        }
+    
+    </script>
+</body>
+</html>
